@@ -1,0 +1,45 @@
+.padre{
+    padding: 5px;
+    background-color: darkgrey;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 2fr 2fr ;
+    grid-template-areas: "header header header"
+                         "nav    nav    nav"
+                         "cont1  cont2  cont3"
+                         "foot   foot   foot"
+    ;
+}
+.padre .header{
+    background-color: gray;
+    color: white;
+    grid-area: header;
+    border-radius: 10px;
+    border-color: black;
+    text-align: center;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    font-style: italic;
+    padding: 5px;
+}
+.padre .nav{
+    background-color: black;
+    color: white;
+    grid-area: nav;
+    padding: 2px;
+
+}
+.padre .cont1{
+    grid-area: cont1;
+}
+.padre .cont2{
+    grid-area: cont2;
+    padding: 10px;
+}
+.padre .cont3{
+    grid-area: cont3;
+}
+.padre .foot{
+    background-color: white;
+    grid-area: foot;
+    padding: 10px;
+}
